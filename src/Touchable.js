@@ -6,6 +6,7 @@ import {
   RectButton,
   BorderlessButton,
 } from 'react-native-gesture-handler';
+import { StyleProp, ViewStyle } from 'react-native';
 
 type Props = {
   feedback: 'opacity' | 'highlight' | 'none',
@@ -15,7 +16,7 @@ type Props = {
   onPress?: () => any,
   disabled?: boolean,
   hitSlop?: { top?: number, bottom?: number, left?: number, right?: number },
-  style?: any,
+  style?: StyleProp<ViewStyle>,
   children?: React.Node,
   activeOpacity?: number,
   underlayColor?: string,
